@@ -1,0 +1,63 @@
+# MOTDList 1.0.0 | All rights to the plugin belongs to Aquatic Studios. (InitDev)
+config: "0.1"
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+#    _____   ___________________________
+#   /     \  \_____  \__    ___/\______ \
+#  /  \ /  \  /   |   \|    |    |    |  \
+# /    Y    \/    |    \    |    |    `   \
+# \____|__  /\_______  /____|   /_______  /
+#         \/         \/                 \/
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+motd-options:
+  new-motd: true # Utilize the motd formats for the server?
+  motds:
+    normal: # Normal MOTD for the server.
+      1: "&b&lAquatic Studios &7| &fMOTDList Now &aAvailable!" # First Line of MOTD.
+      2: "&fSupport &7[1.8 - 1.18] : &a&lJOIN NOW!" # Second Line of MOTD.
+    maintenance: # Maintenance MOTD for the server.
+      1: "&b&lAquatic Studios &7| &cServer on Maintenance!"
+      2: "&eWe will be back soon!"
+  paper: # Settings for Paper Servers (1.12 or higher).
+    hide-players-number: false # Hide the number of players?
+    show-fake-online-players: true # Show a fake number of players connected?
+    online-players: 3200 # Number of players connected
+  max-players: 2022 # Maximum players number.
+  one-more: false # Add a one more player to maxplayers number? Ex: 0/1 -> 1/2
+  maintenance: false # Toggle the Maintenance Mode? (MOTD)
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+#   _________________   ____ __________  ________    _________
+#  /   _____/\_____  \ |    |   \      \ \______ \  /   _____/
+#  \_____  \  /   |   \|    |   /   |   \ |    |  \ \_____  \
+#  /        \/    |    \    |  /    |    \|    `   \/        \
+#  /_______  /\_______  /______/\____|__  /_______  /_______  /
+#          \/         \/                \/        \/        \/
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+sound:
+  permission: ENTITY_ITEM_BREAK
+  reload: UI_BUTTON_CLICK
+  volume: 1.0
+  pitch: 1.0
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+#   _____  ___________ _________ _________   _____    ___________________ _________
+# /       \ \_   _____//   _____//   _____/  /  _  \  /  _____/\_   _____//   _____/
+# /  \ /   \ |    __)_ \_____  \ \_____  \  /  /_\  \/   \  ___ |    __)_ \_____  \
+# /    Y    \|        \/        \/        \/    |    \    \_\  \|        \/        \
+# \____|__  /_______  /_______  /_______  /\____|__  /\______  /_______  /_______  /
+#         \/        \/        \/        \/         \/        \/        \/        \/
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+messages:
+  prefix: "&b[MOTDList]" # Utilize with '<prefix.format>'.
+  no-perm: "<prefix.format> &fYou must be &c[Admin] &fto use this &ecommand&f."
+  no-cmd: "<prefix.format> &fThe command &e[<sub.command>] &fhas not been added."
+  help-commands: |-
+    &l
+    &b&l        MOTDList &7(1.0.0)
+    &f        Developed By &aInitDev
+    &l
+    &b'/motdlist []' &fMain plugin command.
+    &b'/motdlist reload' &fReload the plugin.
+    &b'/motdlist help' &fShow the plugin commands.
+    &l
+  reloaded: "<prefix.format> &fReloaded in &a<reload.time>ms&f."
